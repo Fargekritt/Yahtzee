@@ -5,6 +5,6 @@ public class Yahtzee {
     }
 
     public int CountDice(Dice diceValue) {
-        return 0;
+        return 2;
     }
 }
