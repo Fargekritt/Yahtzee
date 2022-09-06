@@ -22,7 +22,16 @@ public class YahtzeeTest {
     }
 
     @Test
-    void test(){
-
+    void shouldReturnTotalScoreTest(){
+        var yahtzee = new Yahtzee(new DiceHand(new Dice[]
+                {
+                        Dice.SIX,
+                        Dice.SIX,
+                        Dice.ONE,
+                        Dice.FOUR,
+                        Dice.THREE,
+                        Dice.FIVE
+                }));
+        assertEquals(25, yahtzee.totalScore());
     }
 }

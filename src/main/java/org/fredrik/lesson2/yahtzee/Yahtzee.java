@@ -12,4 +12,8 @@ public class Yahtzee {
         return diceHand.getDiceAmount(diceValue);
 
     }
+
+    public int totalScore() {
+        return 0;
+    }
 }

@@ -5,5 +5,5 @@ public enum Dice {
     TWO,
     THREE,
     FOUR,
-    FIVE,
+    FIVE, SIX,
 }
