@@ -20,4 +20,9 @@ public class YahtzeeTest {
         }));
         assertEquals(2, yahtzee.CountDice(Dice.ONE));
     }
+
+    @Test
+    void test(){
+
+    }
 }
