@@ -8,22 +8,22 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class YahtzeeTest {
 
     @Test
-    void shouldReturnAmountOf1sTest(){
-        var yahtzee = new Yahtzee(new DiceHand(new Dice[]
-        {
-            Dice.ONE,
-            Dice.TWO,
-            Dice.ONE,
-            Dice.FOUR,
-            Dice.THREE,
-            Dice.FIVE
-        }));
+    void shouldReturnAmountOf1sTest() {
+        var yahtzee = new Yahtzee(new Dice[]
+                {
+                        Dice.ONE,
+                        Dice.TWO,
+                        Dice.ONE,
+                        Dice.FOUR,
+                        Dice.THREE,
+                        Dice.FIVE
+                });
         assertEquals(2, yahtzee.CountDice(Dice.ONE));
     }
 
     @Test
-    void shouldReturnTotalScoreTest(){
-        var yahtzee = new Yahtzee(new DiceHand(new Dice[]
+    void shouldReturnTotalScoreTest() {
+        var yahtzee = new Yahtzee(new Dice[]
                 {
                         Dice.SIX,
                         Dice.SIX,
@@ -31,7 +31,7 @@ public class YahtzeeTest {
                         Dice.FOUR,
                         Dice.THREE,
                         Dice.FIVE
-                }));
+                });
         assertEquals(25, yahtzee.totalScore());
     }
 }

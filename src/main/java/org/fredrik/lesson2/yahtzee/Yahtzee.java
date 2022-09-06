@@ -2,16 +2,24 @@ package org.fredrik.lesson2.yahtzee;
 
 public class Yahtzee {
 
-    private DiceHand diceHand;
+    private Dice[] dice;
 
-    public Yahtzee(DiceHand diceHand) {
-        this.diceHand = diceHand;
+    public Yahtzee(Dice[] dice) {
+        this.dice = dice;
     }
 
     public int CountDice(Dice diceValue) {
-        return diceHand.getDiceAmount(diceValue);
+        int amount = 0;
 
+        for (Dice dice : dice) {
+
+            if (dice.compareTo(diceValue) == 0) {
+                amount++;
+            }
+        }
+        return amount;
     }
+
     public int totalScore() {
         return 0;
     }
